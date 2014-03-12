@@ -10,7 +10,7 @@ library(vcd)
 fourfold(M[,1:2]) 
 fourfold(M[,c(1,3)]) 
 ## fourfold plot is used to depict odds ratio
-## only for 2x2 tables
+## fourfold is only for 2x2 tables
 sieve(M,sievetype="observed", shade=TRUE)
 sieve(M,sievetype="expected", shade=TRUE)
 assoc(M) ## show pearson residuals
