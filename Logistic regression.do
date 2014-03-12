@@ -5,6 +5,8 @@ recode lfp (1=0) (2=1), gen(y)
 logit y k5 k618 age i.wc i.hc lwg inc
 * return odds ratio rather than coef
 logistic y k5 k618 age i.wc i.hc lwg inc
+* ereturn list
+matrix list e(V)
 * list variaous forms of coef for interpretation
 * need to install spost first
 * refer to www.indiana.edu/~jslsoc/spost.htm for more
