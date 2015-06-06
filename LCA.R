@@ -39,3 +39,18 @@ cases_without_missing <- complete.cases(dat[,c("fengqing", "lianghui", "zhaoyuan
 dat$cls[cases_without_missing] <- sentM4alt$predclass
 ## note the trick here: these with missing variables are excluded from the latent class analysis
 ##      and the predicted class is not avaiable
+
+
+cmplca <- function(..., plot=TRUE){
+  ## lca models fitted by library(lcca)
+  obj <- list(...)
+  nclass <- sapply(obj, function(x) nrow(x$param$gamma))
+  aic <- sapply(obj, function(x) x$AIC)
+  bic <- sapply(obj, function(x) x$BIC)
+  ans <- data.frame(nclass=nclass, aic=aic, bic=bic)
+  if (plot){
+    require(lattice)
+    print(xyplot(aic+bic~nclass, type="b",lty=c(1,2), auto.key=list(columns = 2)))
+  }
+  ans
+}
