@@ -20,5 +20,13 @@ curve(plogis(x*-4),-20,20,lty=5,col="red",add=T)
 ## fit a logistic model
 library(car)
 summary(m1 <- glm(lfp~k5+k618+age+wc+hc+lwg+inc,data=Mroz,family=binomial))
+## visualization of model coefficients
 library(coefplot)
 coefplot(m1)
+
+## goodness of fit
+library(LogisticDx)
+logiGOF(m1, g = 10)
+logiDx(m1)
+
+
