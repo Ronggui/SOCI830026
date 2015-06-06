@@ -13,4 +13,4 @@ fourfold(M[,c(1,3)])
 ## fourfold is only for 2x2 tables
 sieve(M,sievetype="observed", shade=TRUE)
 sieve(M,sievetype="expected", shade=TRUE)
-assoc(M) ## show pearson residuals
+assoc(M, shade=TRUE) ## show pearson residuals
