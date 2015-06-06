@@ -54,3 +54,14 @@ cmplca <- function(..., plot=TRUE){
   }
   ans
 }
+
+library(lcca)
+mod <- cbind(proElection, consitutionalism, transparency, newsRegulation, sarft, netRegulation, propaganda, univalues, citizenship, rights, ruleOfLaw)~1
+summary(fit1 <- lca(mod, data=dat, nclass=1))
+summary(fit2 <- lca(mod, data=dat, nclass=2))
+summary(fit3 <- lca(mod, data=dat, nclass=3))
+summary(fit4 <- lca(mod, data=dat, nclass=4))
+summary(fit5 <- lca(mod, data=dat, nclass=5))
+summary(fit6 <- lca(mod, data=dat, nclass=6))
+summary(fit7 <- lca(mod, data=dat, nclass=7))
+cmplca(fit1, fit2, fit3, fit4, fit5, fit6, fit7)
