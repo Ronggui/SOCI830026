@@ -12,6 +12,17 @@ cmpLCA <- function(...){
   legend("bottomleft", legend=c("AIC", "BIC", "LLik"), col=c("black", "red", "blue"), lty=1)
 }
 
+condTable <- function(obj, digits = 3) {
+  ## obj: fitted object from poLCA
+  ## generate table of conditional probabilities for easy reading
+  tt <- lapply(obj$probs, function(condProbs) t(condProbs))
+  condT <- do.call(rbind, tt)
+  nCategories <- sapply(tt, function(tti) nrow(tti))
+  rownames(condT) <- paste(rep(names(tt), times=nCategories), rownames(condT), sep=" ")
+  colnames(condT) <- gsub(":", "", colnames(condT))
+  round(condT, digits)
+  }
+  
 library(poLCA)
 ## all manifest variables are recoded from 1, 2, ... (Not start from 0)
 
