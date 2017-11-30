@@ -1,0 +1,273 @@
+4.9*0.05
+4.9*0.02
+4.9/1.06*0.06*1.13
+x=scan()
+sum(x)
+110+24+109+22+25+22+23+27+85+96+93+22+42+27+25+28+65+18+23+29+16+22+27+26+23+22+75+50
+1176 + 300
+215.47
+38+25+130
+38+25+130+14+26
+38+25+130+26
+38+25+130+20
+38+25+130+20+17
+38+25+130+20
+38+25+130+23
+1176+216
+cooks.distance
+stats:::cooks.distance.lm
+?stats:::cooks.distance.lm
+library(car)
+cooks.distance
+?cooks.distance
+library(RQDA)
+library(TeachingDemo)
+library(TeachingDemos)
+?TeachingDemos
+if(interactive()){#
+put.points.demo()#
+#
+x <- rnorm(25, 5, 1)#
+y <- x + rnorm(25)#
+put.points.demo(x,y)#
+}
+library(TeachingDemos)
+??put.points.demo
+?put.points.demo
+if(interactive()){#
+put.points.demo()#
+#
+x <- rnorm(25, 5, 1)#
+y <- x + rnorm(25)#
+put.points.demo(x,y)#
+}
+install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))#
+devtools::install_github('IRkernel/IRkernel')
+install.packages("IRKernel")
+library(RQDA)
+gc()
+library(mediation)
+mediate
+?mediate
+24+24+24+22+27+28+59
+160+83+79
+322+400+208+642+614
+159+168+196+192+210+230+313.5
+614+208+641+400+170+83+79
+614+208+641
+170+83+7
+614+208+641
+170+83+
+79
+170+83+79
+1463+400+332
+102+174+114+40+40+133+130+＋120+69+157+104+178＋184＋157
+102+174+114+40+40+133+130+120+69+157+104+178＋184＋157
+102+174+114+40+40+133+130+120+69+157+104+178+184+157
+library(car)
+?data.ellipse
+library(boot)
+?jack.after.boot
+library(car)
+mod_y <- lm(prestige ~ education, data = Prestige)mod_m <- lm(income ~ education, data = Prestige)mod_full <- lm(prestige ~ income + education, data = Prestige)
+mod_y
+mod_m
+mod_full
+coef(mod_m)
+coef(mod_full)
+coef(mod_full)['income']
+coef(mod_m)['education']
+vcov(mod_full)
+library(boot)
+boot.ci
+boot:::norm.ci
+?boot
+diff.means <- function(d, f)#
+{    n <- nrow(d)#
+     gp1 <- 1:table(as.numeric(d$series))[1]#
+     m1 <- sum(d[gp1,1] * f[gp1])/sum(f[gp1])#
+     m2 <- sum(d[-gp1,1] * f[-gp1])/sum(f[-gp1])#
+     ss1 <- sum(d[gp1,1]^2 * f[gp1]) - (m1 *  m1 * sum(f[gp1]))#
+     ss2 <- sum(d[-gp1,1]^2 * f[-gp1]) - (m2 *  m2 * sum(f[-gp1]))#
+     c(m1 - m2, (ss1 + ss2)/(sum(f) - 2))#
+}#
+grav1 <- gravity[as.numeric(gravity[,2]) >= 7,]#
+boot(grav1, diff.means, R = 999, stype = "f", strata = grav1[,2])
+a=boot(grav1, diff.means, R = 999, stype = "f", strata = grav1[,2])
+a$t0
+a$t
+a$statistic
+a$sim
+boot::norm.ci
+boot::norm.ci(a)
+debug(boot::norm.ci)
+boot::norm.ci(a)
+t
+len(t)
+lenght(t)
+length(t)
+h
+qnorm((1 + conf)/2
+)
+500+178+184+180
+1500-7500
+15000-7500
+library(tools)
+update_pkg_po?
+?update_pkg_po
+searchpaths
+searchpaths()
+?locale
+??Sys.getlocale
+?Sys.getlocale
+Sys.getlocale()
+Sys.setlocale(, "zh_CN.UTF-8")
+Sys.setlocale(, "chs")
+Sys.setlocale(, "zh_CN.UTF-8")
+2194+4000
+3241
+2194+4000
+2194+4000 － 8328.94
+2194+4000 - 8328.94
+3241-999
+2700+2000+700+700+2194
+57.8+129+75.8
+124+130+161+133+192
+library(RSQLite)
+packageDescription("RSQLite")
+10626+5000-13488
+10626.70
+10626.70-45.1
+10581.6 - 13488
+10581.60+2906.40
+57+29+34+63
+25+28+20+28+28
+35+16+24+85+79+30+35+35+35+34+28
+597785-395665
+49000*0.9
+5581.38*0.015
+5581.38*0.015*9
+5795.44*0.015
+5795.44*0.015*12
+5854.98*0.015*12
+7458.20*0.015*12
+6727.26*0.015*12
+6739.89*0.015*12
+6792.93*0.015*12
+7019.8*0.015*12
+8867.68*0.015*12
+x =scan()
+sum(x)
+5200-4978.13
+5940+4890
+10498+330
+10499+330
+10829-5940
+11741
+66+324+144+300+300+300+300+300+250+250+250
+66+324+144+300+300+300+300+250+250+250
+2480+1620
+693+612+612+712+712+712+712+1200
+5965+7701
+693+612+612+712+712+712+712+800
+693+612+612+712+712+712+712+400+400+400
+13670.2692 - 5965
+5965	+ 7701
+5206.87-4979.37
+21+63+10+221.87
+5940+4889
+5200-4978.1
+library(RQDA)
+Sys.getlocale()
+Sys.setlocale(,"zh_CN.UTF-8")
+RQDA()
+system("defaults write org.R-project.R force.LANG zh_CN.UTF-8")
+2016-1945
+2016-1949
+2016-51
+4/27
+x = scan(what="character")
+unique(x)
+print(unique(x))
+writeLines(x)
+writeLines(unique(x))
+92+25+26+110+23+40+24+27+29+21+103+180+25
+?eigen
+eigen(cbind(c(1,-1), c(-1,1)))
+svd(cbind(c(1,-1), c(-1,1)))
+Rapp.updates
+Rapp.updates()
+188+190
+214+192
+system("defaults write org.R-project.R force.LANG en_US.UTF-8")
+Rapp.updates()
+30*8+30*8/60
+0.6+0.5+1+0.098+1.202
+0.6+0.5+1+0.098+1.202 - 4.5
+0.6+0.5+1+0.098+2.202
+0.7+0.5+1+0.098+2.202
+1400+50+1120+40+1050+100+1050
+1400+50+1120+40+1050+100+1050+120
+156+110+100+156+98+390+193
+4930+900+1203
+4930+900+1283
+4.5*0.4
+0.6+0.8+0.09
+0.6+0.8+0.09+1.8
+0.6+0.8+0.09+1.8-4.5
+0.6+0.4+0.09+1.8-4.5
+1.61+1.8+0.09+0.4+0.6
+0.7+0.4+0.6+0.09+2.02
+0.7+0.4+0.6+0.09+2.02-4.5
+1+0.4+0.6+0.09+2.202+0.59
+1+0.4+0.6+0.09+2.202+0.59-4.6
+0.6-0.282
+1+0.4+0.318+0.09+2.02+0.59
+1+0.4+0.3+0.09+2.02+0.59
+1。1+0.4+0.3+0.09+2.02+0.59
+1.1+0.4+0.3+0.09+2.02+0.59
+1.1+0.4+0.3+0.09+2.202+0.59
+1.1+0.7+0.09+2.02+0.59
+1.1+0.4+0.4+0.09+2.02+0.59
+1.1+0.4+0.3+0.09+2.02+0.59
+774/150
+774/200
+82+67+92+70
+exp(-1.4629)
+install.packages("jieba")
+install.packages("jiebaR")
+4.5*0.05
+4.5-2.615000
+4.5/1.06*0.06*1.13
+0.2+0.59+1.1+0.3+0.225
+0.2+0.59+1.1+0.3+0.225+2.085
+4.5*0.033
+4.5*0.05
+4.5*0.055
+4.5 - 4.5*0.055
+4.5*0.05
+4.5*0.033
+0.225+0.1485
+4.5 - （0.225+0.1485）
+4.5- (0.225+0.1485)
+4.5- (0.225+0.1485) - 1.1
+4.5- (0.225+0.1485) - 1.1 - 0.2
+4.5- (0.225+0.1485) - 1.1 - 0.2 - 0.3
+4.5- (0.225+0.1485) - 1.1 - 0.2 - 0.3-0.59
+x=scan()
+sum(x)
+system("defaults write org.R-project.R force.LANG zh_CN.UTF-8")
+测试
+library(mlogit)
+install.packages("mlogit")
+install.packages("mlogit", rep="http://cran.r-project.org")
+chooseCRANmirror()
+install.packages("mlogit")
+install.packages("VGAM")
+library(mlogit)
+library(brant)
+?hmftest
+library(rms)
+library(brant)
+?brant
+library(nnet)

@@ -7,3 +7,8 @@ summary(m1)
 library(MASS)
 m2 <- glm.nb(art~fem+ment, data=couart)
 summary(m2)
+
+library(pscl)
+vignette("countreg", package="pscl")
+
+

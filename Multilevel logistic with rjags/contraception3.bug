@@ -1,0 +1,26 @@
+model {
+   for (j in 1:M){
+       mu[j,1:2] ~ dmnorm(mean,tau) 
+       ## multivariate normal distribution/unstructured variance
+   }
+
+   for (i in 1:N) {
+      logit(p[i]) <- alpha0 + alpha.age*age[i] + alpha.urban*urbanBin[i] +
+                     alpha.ch1*ch1[i] + alpha.ch2*ch2[i] + alpha.ch3*ch3[i] +
+                     mu[district2[i],1]*urbanBin[i] + mu[district2[i],2];
+      useBin[i] ~ dbern(p[i]);
+   }
+
+   alpha0  ~ dnorm(0.0,1.0E-6);  # intercept
+   alpha.urban  ~ dnorm(0.0,1.0E-6);
+   alpha.age  ~ dnorm(0.0,1.0E-6);
+   alpha.ch1 ~ dnorm(0.0,1.0E-6);
+   alpha.ch2 ~ dnorm(0.0,1.0E-6);
+   alpha.ch3 ~ dnorm(0.0,1.0E-6);
+
+   tau[1:2,1:2] ~ dwish(R, 2) ## R is a 2x2 matrix, in data argument
+   sigma2[1:2,1:2] <- inverse(tau)
+   sigma.u <- sqrt(sigma2[1, 1])
+   sigma.i <- sqrt(sigma2[2, 2])
+   cov.iu <- sigma2[1, 2]
+}
